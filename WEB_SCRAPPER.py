@@ -12,7 +12,7 @@ s3_key = ["S3_KEY"]
 
 
 def extract(page):
-    url = f'https://www.linkedin.com/jobs/search/?currentJobId=3719124343&geoId=101949407&keywords=internship&location=Illinois%2C%20United%20States&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true&start={page}' # URL searching for job data you are trying to extract
+    url = f'https://www.linkedin.com/jobs/search/?currentJobId=3719124343&geoId=101949407&keywords=internship&location=Illinois%2C%20United%20States&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true&start={page}' # LinkedIn URL for job data you are trying to extract
     user = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'}
     r = requests.get(url, user)
     search = BeautifulSoup(r.text, "html.parser")
@@ -68,7 +68,6 @@ df['Extracted_date'] = pd.to_datetime('today').normalize()
 
 # splitting location column
 df[['State', 'Country']] = df['Location'].str.split(',', expand=True)
-df['State'] = df['State'].replace({'United States': 'Undefined'})
 
 # creating category to segregate title related to the respected fields
 category_keywords = {
