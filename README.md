@@ -27,9 +27,18 @@ AWS Glue Crawler plays a pivotal role in dynamically cataloging scraped data int
 
 The AWS Data Catalog snippet contains metadata for all crawled data. It serves as a centralized repository, offering a structured overview of the cataloged information, and facilitating efficient data management and retrieval.
 
+<img width="652" alt="image" src="https://github.com/vedant077/DataHarbor-Internship-Trends/assets/58139698/a52e4cee-0b71-4759-abee-e97bce37fe90">
+
+
 ### AWS Glue Job
 
 The ETL process is executed through an AWS Glue Job triggered by an AWS EventBridge rule. This snippet provides a glimpse into the PySpark code driving the data transformation, along with monitoring details, showcasing the status of each job run for effective management.
+
+<img width="646" alt="Screenshot 2024-01-22 at 4 58 44 PM" src="https://github.com/vedant077/DataHarbor-Internship-Trends/assets/58139698/dbf32e0f-b0d1-450a-a026-c34a35520b29">
+
+<img width="696" alt="Screenshot 2024-01-22 at 5 00 38 PM" src="https://github.com/vedant077/DataHarbor-Internship-Trends/assets/58139698/6c493855-daf4-498c-b817-7a7075e7eec2">
+
+<img width="675" alt="Screenshot 2024-01-22 at 5 00 02 PM" src="https://github.com/vedant077/DataHarbor-Internship-Trends/assets/58139698/b55ac6a3-e857-4971-8663-41993f8e0894">
 
 ### AWS RDS
 
