@@ -18,6 +18,8 @@ def extract(page):
     search = BeautifulSoup(r.text, "html.parser")
     return search
 
+# Transform function finds the important details from the parsed data and keeps data like job title,company details, location and some other details
+
 def transform(search):
     divs = search.find_all('div', class_ = 'base-search-card__info')
     for items in divs:
