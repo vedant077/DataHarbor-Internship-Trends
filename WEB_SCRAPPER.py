@@ -60,7 +60,7 @@ for i in range(0,2001,25):
 
 # putting everything in a dataframe
 df = pd.DataFrame(job_list)
-#print(df.head())
+# use -> print(df.head(n)) to get the top n rows of the dataframe
 
 # dropping duplicates
 df.drop_duplicates(inplace=True)
