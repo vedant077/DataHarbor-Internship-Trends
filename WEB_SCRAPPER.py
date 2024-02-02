@@ -9,8 +9,7 @@ aws_secret_access_key = ["AWS_ACESS_KEY"]
 s3_bucket_name = ["S3_BUCKET_NAME"]
 s3_key = ["S3_KEY"]
 
-
-
+# Function to extract the information from the page rendered
 def extract(page):
     url = f'https://www.linkedin.com/jobs/search/?currentJobId=3719124343&geoId=101949407&keywords=internship&location=Illinois%2C%20United%20States&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true&start={page}' # LinkedIn URL for job data you are trying to extract
     user = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'}
