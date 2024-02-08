@@ -51,7 +51,6 @@ def transform(search):
 
 job_list = []
 
-
 for i in range(0,2001,25):
     print(f'Scraping job till {i+1}')
     c = extract(i)
